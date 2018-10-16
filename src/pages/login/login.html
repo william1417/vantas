@@ -1,0 +1,36 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Inicio de sesion</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list class="content-form-login">
+		<ion-item class="header-form-login">
+	    	
+	  	</ion-item>
+
+	  	<ion-item class="input-form-login">
+	    	<ion-label floating>Nombre</ion-label>
+	    	<ion-input [(ngModel)]="nombre" type="text" value=""></ion-input>
+	  	</ion-item>
+
+	  	<ion-item  class="input-form-login">
+	    	<ion-label floating>pin</ion-label>
+	    	<ion-input [(ngModel)]="pin" type=number style="-webkit-text-security:disc;" ng-model="loginData.pincode" value=""></ion-input>	    		    	
+      </ion-item>
+      
+	  	<ion-item class="btn-login-form">	  	
+	  		<button (click)="login()" class="button-md" primary ion-button block large icon-only>Entrar</button>
+		</ion-item>
+  </ion-list>
+</ion-content>

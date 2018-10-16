@@ -1,0 +1,74 @@
+<!--
+  Generated template for the ArticulosAddPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Agregar Articulos</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-grid>
+      <ion-row center>
+          <ion-col col-10 center text-center offset-1>
+    
+            <ion-item>
+              <ion-label color="primary" floating>Nombre de Producto</ion-label>
+              <ion-input [(ngModel)]="producto"></ion-input>
+            </ion-item>
+            <br>
+            <ion-item>
+              <ion-label color="primary" floating>Codigo</ion-label>
+              <ion-input [(ngModel)]="codigo"></ion-input>
+            </ion-item>
+            <br>
+            <ion-item>
+                <ion-label>Categoria</ion-label>
+                <ion-select [(ngModel)]="categoria" multiple="false">
+                    <ion-option  [value]="1" selected>Sin Categoria</ion-option>
+                    <ion-option  [value]="2">Productos frescos</ion-option>
+                    <ion-option  [value]="3">Carnes</ion-option>
+                    <ion-option  [value]="4">Lácteos</ion-option>
+                    <ion-option  [value]="5" >Alimentos congelados</ion-option>
+                    <ion-option  [value]="6">Pan, cereal, arroz y pastas</ion-option>
+                    <ion-option  [value]="7">Alimentos básicos y misceláneos</ion-option>
+                    <ion-option  [value]="8">Salud y belleza</ion-option>
+                    <ion-option  [value]="9">Artículos para el hogar</ion-option>
+                    <ion-option  [value]="10">Bebidas</ion-option>
+                    <ion-option  [value]="0">Otros</ion-option>
+
+                </ion-select>
+            </ion-item>
+            <br>
+            <ion-item>
+                <ion-label>Unidad de Medida</ion-label>
+                <ion-select [(ngModel)]="UM" multiple="false">
+                    <ion-option  [value]="1" selected >Pieza</ion-option>
+                    <ion-option  [value]="2">Kilogramo</ion-option>
+                    <ion-option  [value]="3">Gramo</ion-option>
+                    <ion-option  [value]="4">Litro</ion-option>
+                    <ion-option  [value]="5">Metro</ion-option>
+                    <ion-option  [value]="6">Paquete</ion-option>
+                    <ion-option  [value]="7">Manojo</ion-option>
+                    <ion-option  [value]="0">Otro</ion-option>
+                </ion-select>
+            </ion-item>
+            <br>
+          <ion-item> 
+            <ion-label color="primary" floating >Precio</ion-label>
+          <ion-input  [(ngModel)]="precio" type="number"></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+            <ion-label color="primary" floating>Descripcion</ion-label>
+            <ion-textarea  [(ngModel)]="descripcion" ></ion-textarea>
+          </ion-item>
+          <br>
+          <button ion-button (click)="save()" block >Guardar</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
