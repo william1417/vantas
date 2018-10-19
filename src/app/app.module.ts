@@ -1,3 +1,4 @@
+import { PagoPage } from './../pages/pago/pago';
 import { ModalPage } from './../pages/ventas/modal.page';
 import { VentasPage } from './../pages/ventas/ventas';
 import { ArticuloEditPage } from './../pages/articulo-edit/articulo-edit';
@@ -41,8 +42,10 @@ export const firebaseConfig = {
     ArticulosAddPage,
     ArticuloEditPage,
     VentasPage,
-    ModalPage
-
+    ModalPage,
+    PagoPage
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -63,7 +66,9 @@ export const firebaseConfig = {
     ArticulosAddPage,
     ArticuloEditPage,
     VentasPage,
-    ModalPage
+    ModalPage,
+    PagoPage
+    
   ],
   providers: [
     StatusBar,

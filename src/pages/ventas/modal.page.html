@@ -5,12 +5,6 @@
   </ion-header>
   
   <ion-content padding>
-    <button ion-button (click)="show()">
-      Show alert
-    </button>
-    <button ion-button (click)="dismiss()">
-      Close modal
-    </button>
     <ion-list>
         <ion-item-sliding  *ngFor="let item of resultados[0]">
           <ion-item class="itemP"  (click)="add(item)">
