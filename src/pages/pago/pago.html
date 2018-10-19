@@ -1,0 +1,28 @@
+<!--
+  Generated template for the PagoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Pago</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-toolbar>
+    <ion-title> <label class="total2Text">Total</label> <label class="total2">{{total | currency}}</label></ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+        <ion-title> <label class="total2Text" >Pago</label> <label color="primary" class="retorno"><ion-input  
+            [(ngModel)]="pago" type="number" class="pagar2" placeholder="$00.00" (keyup)="resta()">{{pago | currency}}</ion-input></label></ion-title>
+      </ion-toolbar>  
+  <ion-toolbar>
+    <ion-title> <label class="total2Text" >Retorno</label> <label color="primary" class="retorno">{{retorno | currency}}</label></ion-title>
+  </ion-toolbar>
+  
+</ion-content>
